@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3014C2F3F505EF98D5B497D6 /* Pods_6thSolution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FABC9E1611F87C76FFBEE7 /* Pods_6thSolution.framework */; };
 		43C8D45C2175E165005A93FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D45B2175E165005A93FD /* AppDelegate.swift */; };
 		43C8D45E2175E165005A93FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D45D2175E165005A93FD /* ViewController.swift */; };
 		43C8D4612175E165005A93FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C8D45F2175E165005A93FD /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28C2F352D3BD5C771870B8B6 /* Pods-6thSolution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-6thSolution.release.xcconfig"; path = "Pods/Target Support Files/Pods-6thSolution/Pods-6thSolution.release.xcconfig"; sourceTree = "<group>"; };
 		43C8D4582175E165005A93FD /* 6thSolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6thSolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C8D45B2175E165005A93FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43C8D45D2175E165005A93FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		43C8D4622175E166005A93FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43C8D4652175E166005A93FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43C8D4672175E166005A93FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8FABC9E1611F87C76FFBEE7 /* Pods_6thSolution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_6thSolution.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1804E62FCA014925DE104B8 /* Pods-6thSolution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-6thSolution.debug.xcconfig"; path = "Pods/Target Support Files/Pods-6thSolution/Pods-6thSolution.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3014C2F3F505EF98D5B497D6 /* Pods_6thSolution.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11763318157BD64093EA87C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8FABC9E1611F87C76FFBEE7 /* Pods_6thSolution.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43C8D44F2175E165005A93FD = {
 			isa = PBXGroup;
 			children = (
 				43C8D45A2175E165005A93FD /* 6thSolution */,
 				43C8D4592175E165005A93FD /* Products */,
+				83A724536122F713CBCCCAAB /* Pods */,
+				11763318157BD64093EA87C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = 6thSolution;
 			sourceTree = "<group>";
 		};
+		83A724536122F713CBCCCAAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1804E62FCA014925DE104B8 /* Pods-6thSolution.debug.xcconfig */,
+				28C2F352D3BD5C771870B8B6 /* Pods-6thSolution.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43C8D46A2175E166005A93FD /* Build configuration list for PBXNativeTarget "6thSolution" */;
 			buildPhases = (
+				AEBF7EFC8BB9F4DAA3357E85 /* [CP] Check Pods Manifest.lock */,
 				43C8D4542175E165005A93FD /* Sources */,
 				43C8D4552175E165005A93FD /* Frameworks */,
 				43C8D4562175E165005A93FD /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEBF7EFC8BB9F4DAA3357E85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-6thSolution-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43C8D4542175E165005A93FD /* Sources */ = {
@@ -280,15 +326,13 @@
 		};
 		43C8D46B2175E166005A93FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1804E62FCA014925DE104B8 /* Pods-6thSolution.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = 6thSolution/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.bahrami.projects.-thSolution";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -298,15 +342,13 @@
 		};
 		43C8D46C2175E166005A93FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C2F352D3BD5C771870B8B6 /* Pods-6thSolution.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = 6thSolution/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.bahrami.projects.-thSolution";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
