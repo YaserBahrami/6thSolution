@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.15" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,11 +24,14 @@
                                 <state key="normal" title="Ok">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j6C-AC-QcQ" kind="show" id="ubZ-3J-xVZ"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq4-xw-DbS">
                                 <rect key="frame" x="10" y="127.33333333333331" width="394" height="184"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -56,13 +59,13 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="UHb-Xn-WEw"/>
+                                <exclude reference="2E7-ch-h1o"/>
+                                <exclude reference="czf-qL-w3C"/>
+                                <exclude reference="zQm-pY-gii"/>
                                 <exclude reference="5us-K9-uXL"/>
                                 <exclude reference="9m4-FH-RHs"/>
                                 <exclude reference="DfG-OF-Qdi"/>
                                 <exclude reference="a3h-Gx-iSm"/>
-                                <exclude reference="2E7-ch-h1o"/>
-                                <exclude reference="czf-qL-w3C"/>
-                                <exclude reference="zQm-pY-gii"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -70,6 +73,11 @@
                                 <include reference="UHb-Xn-WEw"/>
                                 <exclude reference="a1o-a3-jE3"/>
                                 <exclude reference="dGc-2v-6W5"/>
+                                <include reference="2E7-ch-h1o"/>
+                                <exclude reference="Ec4-15-4wR"/>
+                                <include reference="czf-qL-w3C"/>
+                                <exclude reference="m0q-0A-8F5"/>
+                                <include reference="zQm-pY-gii"/>
                                 <exclude reference="1tZ-Wb-iTs"/>
                                 <exclude reference="3Gg-7A-i5X"/>
                                 <include reference="5us-K9-uXL"/>
@@ -78,11 +86,6 @@
                                 <include reference="DfG-OF-Qdi"/>
                                 <exclude reference="JfZ-Da-m3l"/>
                                 <include reference="a3h-Gx-iSm"/>
-                                <include reference="2E7-ch-h1o"/>
-                                <exclude reference="Ec4-15-4wR"/>
-                                <include reference="czf-qL-w3C"/>
-                                <exclude reference="m0q-0A-8F5"/>
-                                <include reference="zQm-pY-gii"/>
                             </mask>
                         </variation>
                     </view>
@@ -94,6 +97,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="61.956521739130437" y="26.086956521739133"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Hj0-mF-h3R">
+            <objects>
+                <viewController id="j6C-AC-QcQ" customClass="DetailViewController" customModule="_thSolution" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ixO-dS-rII">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-co-TaB">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ebw-co-TaB" firstAttribute="top" secondItem="yer-k4-MHH" secondAttribute="top" id="3EZ-RM-HRG"/>
+                            <constraint firstItem="Ebw-co-TaB" firstAttribute="leading" secondItem="yer-k4-MHH" secondAttribute="leading" id="6Xc-nk-y5R"/>
+                            <constraint firstItem="Ebw-co-TaB" firstAttribute="trailing" secondItem="yer-k4-MHH" secondAttribute="trailing" id="Jk7-u9-dH1"/>
+                            <constraint firstItem="Ebw-co-TaB" firstAttribute="bottom" secondItem="yer-k4-MHH" secondAttribute="bottom" id="xkU-1y-dJd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yer-k4-MHH"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ebw-co-TaB" id="U7H-DL-Vfx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1js-PQ-Aqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="26"/>
         </scene>
     </scenes>
 </document>
